@@ -3,19 +3,25 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <ion-content :fullscreen="true">
       <ion-row>
-          <ion-toolbar style="color:#343A40">
-          <ion-title style="color:white; margin-left :20px;margin-top: 10px; margin-bottom: 10px; font-size: 25px;">Kampung<span style="color:#00DC72; font-size: 25px;">Siber</span></ion-title>
-          <ion-buttons class ="button-nav" slot="primary" style="margin-bottom: 20px;" >
-            <ion-button class="ion-text-capitalize" style="font-size: 20px; margin: 20px; margin-left: 30px;" href="/LandingPage">
+        <ion-toolbar style="color:#343A40">
+          <ion-title
+            style="color:white; margin-left :20px;margin-top: 10px; margin-bottom: 10px; font-size: 25px;">Kampung<span
+              style="color:#00DC72; font-size: 25px;">Siber</span></ion-title>
+          <ion-buttons class="button-nav" slot="primary" style="margin-bottom: 20px;">
+            <ion-button class="ion-text-capitalize" style="font-size: 20px; margin: 20px; margin-left: 30px;"
+              href="/LandingPage">
               Beranda
             </ion-button>
-            <ion-button class="ion-text-capitalize" style="font-size: 20px; margin: 20px; margin-left: 30px;" href="/FaqPage">
+            <ion-button class="ion-text-capitalize" style="font-size: 20px; margin: 20px; margin-left: 30px;"
+              href="/FaqPage">
               FAQ
             </ion-button>
-            <ion-button class="ion-text-capitalize" style="font-size: 20px; margin: 20px; margin-left: 30px;" href="/ContactUs">
+            <ion-button class="ion-text-capitalize" style="font-size: 20px; margin: 20px; margin-left: 30px;"
+              href="/ContactUs">
               Contact Us
             </ion-button>
-            <ion-button class="ion-text-capitalize" style="font-size: 20px; margin: 20px; margin-left: 30px;" href="/SignIn">
+            <ion-button class="ion-text-capitalize" style="font-size: 20px; margin: 20px; margin-left: 30px;"
+              href="/SignIn">
               Sign In
             </ion-button>
           </ion-buttons>
@@ -29,10 +35,13 @@
               Klinik Coding Pertama di Indonesia
             </h1>
             <p class="text2">
-              Sekarang kamu ga perlu overthinking menghadapi error dan bug lagi dengan konsultasi sama "dokter-dokter" coding kita sesuai spesialisasinya lho 
+              Sekarang kamu ga perlu overthinking menghadapi error dan bug lagi dengan konsultasi sama "dokter-dokter"
+              coding kita sesuai spesialisasinya lho
             </p>
-            <ion-button id="btn1" color="success" size="large"><p class=btn1text>Book
-                Sekarang!</p></ion-button>
+            <ion-button id="btn1" color="success" size="large">
+              <p class=btn1text>Book
+                Sekarang!</p>
+            </ion-button>
           </ion-col>
           <ion-col style="right: 0; position: relative; float:right; margin-left: 130px;">
             <ion-img id="img1" src="https://i.postimg.cc/8kKqbpjg/Group-17.png" alt="pict1"></ion-img>
@@ -40,13 +49,14 @@
           </ion-col>
         </ion-row>
 
-        <ion-row style="background-color: #F6F9FC; padding-top: 108px;padding-bottom: 162px;" >
-          <ion-col size-xl="auto" style >
+        <ion-row style="background-color: #F6F9FC; padding-top: 108px;padding-bottom: 162px;">
+          <ion-col size-xl="auto" style>
             <h2 class="text3">Mengapa kita lebih baik dari yang lain</h2>
             <p class="text4">Tentu jika kamu ingin memilih kami
               maka kamu harus tau alasan untuk
               memilih kami kan?
-              <br>nah ini dia alasannya!</p>
+              <br>nah ini dia alasannya!
+            </p>
           </ion-col>
           <ion-col size-xl="2.2" style="margin-right: 10px; margin-left: 25px;">
             <ion-img src="https://i.postimg.cc/MTNbyJpY/Card1.png"></ion-img>
@@ -142,8 +152,8 @@
         <ion-row class="ion-align-items-center" style="background-color: #F6F9FC;">
           <ion-col></ion-col>
           <ion-col>
-            <ion-button expand="block" shape="round" color="light" fill="outline" class="testimoni-button"><span
-                class="testimoni-text">Lihat Testimoni lainnya~~</span></ion-button>
+            <ion-button expand="block" shape="round" color="light" fill="outline" class="testimoni-button"
+              href="/Testimoni"><span class="testimoni-text">Lihat Testimoni lainnya~~</span></ion-button>
           </ion-col>
           <ion-col></ion-col>
         </ion-row>
@@ -432,7 +442,7 @@
         <ion-row class="ion-align-items-center" style="background-color: #F6F9FC;">
           <ion-col></ion-col>
           <ion-col>
-            <ion-button expand="block" shape="round" color="light" fill="outline" class="testimoni-button"><span
+            <ion-button expand="block" shape="round" color="light" fill="outline" class="testimoni-button" href="/Dashboard"><span
                 class="testimoni-text">...Lihat Selengkapnya</span></ion-button>
           </ion-col>
           <ion-col></ion-col>
@@ -490,7 +500,7 @@
 
             </ion-col>
             <ion-col size="auto">
-              <ion-button expand="block" shape="round" color="light" fill="outline" class="chat-button">
+              <ion-button expand="block" shape="round" color="light" fill="outline" class="chat-button" href="ContactUs">
                 <ion-img slot="start" src="https://i.postimg.cc/65Y5M1GH/Vector-1.png" size="auto"
                   style="padding-right: 15px; padding-left: 45px;"></ion-img>
                 <span style="padding-right: 100px">Chat Kami</span></ion-button>
@@ -528,7 +538,6 @@
             </div>
           </ion-col>
         </ion-row>
-
       </ion-grid>
     </ion-content>
   </ion-page>
@@ -545,12 +554,12 @@ export default defineComponent({
     IonContent,
     IonPage, IonToolbar, IonTitle, IonButton, IonButtons, IonGrid, IonCol, IonRow,
   },
-  mounted(){
-      let user= localStorage.getItem('user');
-      if(user){
-        this.$router.push({name:'SignedIn'})
-      }
+  mounted() {
+    let user = localStorage.getItem('user');
+    if (user) {
+      this.$router.push({ name: 'SignedIn' })
     }
+  }
 });
 </script>
 
@@ -562,12 +571,12 @@ export default defineComponent({
 }
 
 .ion-color-new {
-	--ion-color-base: var(--ion-color-new);
-	--ion-color-base-rgb: var(--ion-color-new-rgb);
-	--ion-color-contrast: var(--ion-color-new-contrast);
-	--ion-color-contrast-rgb: var(--ion-color-new-contrast-rgb);
-	--ion-color-shade: var(--ion-color-new-shade);
-	--ion-color-tint: var(--ion-color-new-tint);
+  --ion-color-base: var(--ion-color-new);
+  --ion-color-base-rgb: var(--ion-color-new-rgb);
+  --ion-color-contrast: var(--ion-color-new-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-new-contrast-rgb);
+  --ion-color-shade: var(--ion-color-new-shade);
+  --ion-color-tint: var(--ion-color-new-tint);
 }
 
 #container {
@@ -660,7 +669,7 @@ ion-card-content {
   overflow-wrap: break-word;
   font-family: 'Poppins';
   font-weight: 400;
-  font-size:35px;
+  font-size: 35px;
   line-height: 52px;
   color: #FFFFFF;
 }
@@ -731,9 +740,9 @@ ion-button {
 #btn1 {
   position: relative;
   margin: 70px 0px 0px 100px;
-  color:#00DC72;
+  color: #00DC72;
   border-radius: 15px;
-  height:70px
+  height: 70px
 }
 
 .btn1text {

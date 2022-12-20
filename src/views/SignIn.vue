@@ -46,7 +46,7 @@
                             </div>
                         </ion-button>
                         <h3 id="password">
-                            Lupa Password? <a href="" style="color:#FF5454;text-decoration: none;">Klik disini</a>
+                            Lupa Password? <a href="/resetpassword" style="color:#FF5454;text-decoration: none;">Klik disini</a>
                         </h3>
                         <h3 id="signup">
                             Belum punya akun? <a href="/Signupopt" style="color:#FF5454;text-decoration: none;">Registrasi

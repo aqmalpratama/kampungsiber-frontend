@@ -162,7 +162,7 @@
           <ion-col></ion-col>
           <ion-col>
             <ion-button expand="block" shape="round" color="light" fill="outline" class="testimoni-button"><span
-                class="testimoni-text" href="/TestimoniPage">Lihat Testimoni lainnya~~</span></ion-button>
+                class="testimoni-text" href="/Testimoni">Lihat Testimoni lainnya~~</span></ion-button>
           </ion-col>
           <ion-col></ion-col>
         </ion-row>
@@ -207,7 +207,7 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
+                <ion-button expand="full" color="success" size="large" href="/booking-consultation"><span class="btn2text">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
@@ -240,7 +240,7 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
+                <ion-button expand="full" color="success" size="large" href="/booking-consultation"><span class="btn2text">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
@@ -273,7 +273,7 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
+                <ion-button expand="full" color="success" size="large" href="/booking-consultation"><span class="btn2text">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
@@ -306,7 +306,7 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
+                <ion-button expand="full" color="success" size="large" href="/booking-consultation"><span class="btn2text">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
@@ -342,7 +342,7 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
+                <ion-button expand="full" color="success" size="large" href="/booking-consultation"><span class="btn2text">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
@@ -375,7 +375,7 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
+                <ion-button expand="full" color="success" size="large" href="/booking-consultation"><span class="btn2text">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
@@ -408,7 +408,7 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
+                <ion-button expand="full" color="success" size="large" href="/booking-consultation"><span class="btn2text">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
@@ -441,7 +441,7 @@
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" >Lihat
+                <ion-button expand="full" color="success" size="large" href="/booking-consultation"><span class="btn2text" >Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
@@ -451,7 +451,7 @@
         <ion-row class="ion-align-items-center" style="background-color: #F6F9FC;">
           <ion-col></ion-col>
           <ion-col>
-            <ion-button expand="block" shape="round" color="light" fill="outline" class="testimoni-button"><span
+            <ion-button expand="block" shape="round" color="light" fill="outline" class="testimoni-button" href="/Dashboard"><span
                 class="testimoni-text">...Lihat Selengkapnya</span></ion-button>
           </ion-col>
           <ion-col></ion-col>
@@ -509,7 +509,7 @@
 
             </ion-col>
             <ion-col size="auto">
-              <ion-button href="/ContactUs" expand="block" shape="round" color="light" fill="outline" class="chat-button">
+              <ion-button href="ContactUs" expand="block" shape="round" color="light" fill="outline" class="chat-button">
                 <ion-img slot="start" src="https://i.postimg.cc/65Y5M1GH/Vector-1.png" size="auto"
                   style="padding-right: 15px; padding-left: 45px;"></ion-img>
                 <span style="padding-right: 100px">Chat Kami</span></ion-button>
@@ -689,13 +689,22 @@ ion-card-content {
   color: #FFFFFF;
 }
 #img1 {
-  margin-left: 100px;
+  margin-left: 200px;
   box-sizing: border-box;
   position: absolute;
   width: auto;
   height: auto;
   /* left: 1138px; */
   top: 47.67px;
+}
+#img2 {
+  box-sizing: border-box;
+  position: absolute;
+  width: auto;
+  height: auto;
+  margin-left: 300px;
+  /* left: 1353px; */
+  top: 291px;
 }
 .text2.a {
   left: 42px;
@@ -726,15 +735,6 @@ ion-card-content {
 }
 ion-button {
   text-transform: inherit;
-}
-#img2 {
-  box-sizing: border-box;
-  position: absolute;
-  width: auto;
-  height: auto;
-  margin-left: 300px;
-  /* left: 1353px; */
-  top: 291px;
 }
 #img1,
 #img2 {

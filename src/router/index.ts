@@ -16,7 +16,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/Landingpage',
-    name: 'Home',
+    name: 'LandingPage',
     component: HomePage
   },
   {
@@ -25,7 +25,7 @@ const routes: Array<RouteRecordRaw> = [
     component: DashboardPage
   },
   {
-    path: '/TestimoniPage',
+    path: '/Testimoni',
     component: () => import('@/views/TestimoniPage.vue')
   },
   {
@@ -69,6 +69,10 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/Signupmentor',
     component: () => import('@/views/SignUp_Mentor.vue')
+  },
+  {
+    path: '/resetpassword',
+    component: () => import('@/views/ForgetPassword.vue')
   },
   {
     path: '/booking-consultation',
