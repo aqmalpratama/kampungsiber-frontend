@@ -31,7 +31,7 @@
     </ion-row>
     <ion-row>
       <ion-col>
-      <ion-searchbar style="margin-left: 490px; color:black; width: 1015px; justify-content: center; text-align: center;"></ion-searchbar>
+      <ion-searchbar style="margin-left: 31vh; color:black; width: 135vh; justify-content: center; text-align: center;"></ion-searchbar>
       </ion-col>
     </ion-row>
     <ion-row>
@@ -128,6 +128,6 @@ export default defineComponent({
 <style>
 .card{
   height: fit-content;
-  width:1000px;
+  width:135vh;
 }
 </style>

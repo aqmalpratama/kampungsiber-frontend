@@ -77,24 +77,6 @@
               </div>
           </ion-col>
         </ion-row>
-        <ion-row class="ion-justify-content-between" style="background-color: #F6F9FC; height: auto;">
-          <ion-col size="3">
-            <h3 id="footer1">Kampungsiber@2077</h3>
-          </ion-col>
-          <ion-col size="3" style="margin-right: 73px">
-            <div style="display:inline-block;vertical-align:top;">
-              <img src="https://clipground.com/images/e-mail-clipart-2.jpg" style="height: 27px; margin-top: 61px;">
-            </div>
-            <div style="display:inline-block;">
-              <p id="footer2">Kampungsiber@mail.com</p>
-            </div>
-            <div style="display:inline-block;vertical-align:top;">
-              <img src="https://cdn.onlinewebfonts.com/svg/img_424458.png" style="height: 24px; margin-top: 61px;">
-              <img src="http://seldomsounds.com/images/social/twitter.png" style="height: 24px; margin-top: 61px; padding-left: 5px;">
-              <img src="https://pluspng.com/img-png/instagram-logo-eps-png-instagram-logo1-instagram-logo-1915.png" style="height: 24px; margin-top: 61px; padding-left: 5px;">
-            </div>
-          </ion-col>
-        </ion-row>
         </ion-grid>
       </ion-content>
     </ion-page>
