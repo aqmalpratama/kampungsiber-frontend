@@ -62,9 +62,9 @@
                                   Pertanyaan yang ingin ditanyakan
                               </h2>
                             <ion-row>
-                              <div class="textbox2">
-                                  <ion-input class="question" type="text" placeholder="ini ini itu"></ion-input>
-                              </div>
+                              <div class="textbox1">
+                            <ion-textarea placeholder="Type something here" rows="6"></ion-textarea>
+                        </div>
                             </ion-row>
                           </ion-grid>
                         <ion-button class="btn1" size="large" color="dark">
@@ -158,6 +158,17 @@
     height: 100px;
     background: linear-gradient(0deg, #EFEFEF, #EFEFEF), linear-gradient(0deg, #EFEFEF, #EFEFEF), #EFEFEF;
     border-radius: 30px;
+}
+.textbox1 {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    width: 40ch;
+    height: 338px;
+    margin: 0px 30px;
+    color: black;
+    font-size: 35px;
+    padding: 0px 15px;
 }
 .textbox2 {
     margin: 0px 30px;
