@@ -5,22 +5,22 @@
       <ion-row>
         <ion-toolbar style="color:#343A40">
           <ion-title
-            style="color:white; margin-left :3vh;margin-top: 10px; margin-bottom: 10px; font-size: 25px;">Kampung<span
-              style="color:#00DC72; font-size: 25px;">Siber</span></ion-title>
+            style="color:white; margin-left :3vh;margin-top: 10px; margin-bottom: 10px; font-size: 2.4vh;">Kampung<span
+              style="color:#00DC72; font-size: 2.4vh;">Siber</span></ion-title>
           <ion-buttons class="button-nav" slot="primary" style="margin-bottom: 3vh;">
-            <ion-button class="ion-text-capitalize" style="font-size: 3vh; margin: 3vh; margin-left: 30px;"
+            <ion-button class="ion-text-capitalize" style="font-size: 2.4vh; margin: 2.6vh; margin-left: 30px;"
               href="/LandingPage">
               Beranda
             </ion-button>
-            <ion-button class="ion-text-capitalize" style="font-size: 3vh; margin: 3vh; margin-left: 30px;"
+            <ion-button class="ion-text-capitalize" style="font-size: 2.4vh; margin: 2.6vh; margin-left: 30px;"
               href="/FaqPage">
               FAQ
             </ion-button>
-            <ion-button class="ion-text-capitalize" style="font-size: 3vh; margin: 3vh; margin-left: 30px;"
+            <ion-button class="ion-text-capitalize" style="font-size: 2.4vh; margin: 2.6vh; margin-left: 30px;"
               href="/ContactUs">
               Contact Us
             </ion-button>
-            <ion-button class="ion-text-capitalize" style="font-size: 3vh; margin: 3vh; margin-left: 30px;"
+            <ion-button class="ion-text-capitalize" style="font-size: 2.4vh; margin: 2.6vh; margin-left: 30px;"
               href="/SignIn">
               Sign In
             </ion-button>
@@ -639,6 +639,7 @@ ion-card-content {
 }
 .back1 {
   /* position: absolute; */
+  top: -20vh;
   width: 100%;
   height: 90vh;
   left: 0px;
