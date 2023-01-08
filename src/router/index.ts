@@ -1,114 +1,91 @@
-import { createRouter, createWebHistory } from '@ionic/vue-router';
-import { RouteRecordRaw } from 'vue-router';
-import HomePage from '../views/HomePage.vue';
-import DashboardPage from '../views/Dashboard.vue';
-import BookingPage from '../views/Booking.vue';
-import SelectMentorVue from '@/views/SelectMentor.vue';
-import BookingInfoVue from '@/views/BookingInfo.vue';
-import PaymentMethod from '@/views/PaymentMethod.vue'
-import PaymentPage from '@/views/PaymentPage.vue';
-import SuccessPageVue from '@/views/SuccessPage.vue';
+import { createRouter, createWebHistory } from "@ionic/vue-router";
+import { RouteRecordRaw } from "vue-router";
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
-    redirect: '/Landingpage'
+    path: "/",
+    component: () => import("../views/pages/HomePage.vue"),
   },
   {
-    path: '/Landingpage',
-    name: 'LandingPage',
-    component: HomePage
+    path: "/home",
+    name: "home",
+    component: () => import("../views/pages/HomePage.vue"),
   },
   {
-    path : '/dashboard',
-    name : 'Dashboard',
-    component: DashboardPage
+    path: "/folder/:id",
+    component: () => import("../views/FolderPage.vue"),
   },
   {
-    path: '/Testimoni',
-    component: () => import('@/views/TestimoniPage.vue')
+    path: "/signin",
+    name: "signin",
+    component: () => import("../views/pages/SigninPage.vue"),
   },
   {
-    path: '/FaqPage',
-    component: () => import('@/views/FaqPage.vue')
+    path: "/signup",
+    name: "signup",
+    component: () => import("../views/pages/SignupPage.vue"),
   },
   {
-    path: '/ContactUs',
-    component: () => import('@/views/ContactUs.vue')
+    path: "/dashboard",
+    name: "dashboard",
+    component: () => import("../views/pages/DashboardPage.vue"),
+    meta: {
+      requiresAuth: true,
+    },
   },
   {
-    name:'SignIn',
-    path: '/SignIn',
-    component: () => import('@/views/SignIn.vue')
+    path: "/profile/:any/:id",
+    name: "profile",
+    component: () => import("../views/pages/ProfilePage.vue"),
   },
   {
-    name:'SignedIn',
-    path: '/Homepage',
-    component: () => import('@/views/HomePageSignedIn.vue')
+    path: "/booking-consultation",
+    component: () => import("../views/pages/BookingPage.vue"),
   },
   {
-    path: '/ProfilePage',
-    component: () => import('@/views/ProfilePage.vue')
+    path: "/booking-consultation/:id",
+    name: "BookingInfo",
+    component: () => import("../views/pages/BookingInfoPage.vue"),
   },
-  {
-    path: '/Riwayat',
-    component: () => import('@/views/RiwayatPage.vue')
-  },
-  {
-    path: '/Signupopt',
-    component: () => import('@/views/SignUp.vue')
-  },
-  {
-    path: '/Signup',
-    component: () => import('@/views/SignUp_Main.vue')
-  },
-  {
-    path: '/Signuplearner',
-    component: () => import('@/views/SignUp_Learner.vue')
-  },
-  {
-    path: '/Signupmentor',
-    component: () => import('@/views/SignUp_Mentor.vue')
-  },
-  {
-    path: '/resetpassword',
-    component: () => import('@/views/ForgetPassword.vue')
-  },
-  {
-    path: '/booking-consultation',
-    name: 'BookingMentor',
-    component: BookingPage
-  },
-  {
-    path: '/booking-consultation/:id',
-    name: 'SelectMentor',
-    component : SelectMentorVue
-  },
-  {
-    path: '/booking-consultation/:id/info',
-    name: 'BookingInfo',
-    component: BookingInfoVue
-  },
-  {
-    path: '/booking-consultation/payment',
-    name: 'PaymentMethod',
-    component : PaymentMethod
-  },
-  {
-    path: '/booking-consultation/payment/detail',
-    name: 'PaymentPage',
-    component : PaymentPage
-  },
-  {
-    path: '/booking-consultation/payment/success',
-    name: 'SuccessPage',
-    component : SuccessPageVue
-  }
-]
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
-})
+  routes,
+});
 
-export default router
+function parseJwt(token: string) {
+  const base64Url = token.split(".")[1];
+  const base64 = base64Url.replace(/-/g, "+").replace(/_/g, "/");
+  const jsonPayload = decodeURIComponent(
+    window
+      .atob(base64)
+      .split("")
+      .map(function (c) {
+        return "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2);
+      })
+      .join("")
+  );
+
+  return JSON.parse(jsonPayload);
+}
+
+router.beforeEach((to, from, next) => {
+  const token = localStorage.getItem("token");
+  if (token) {
+    const jwtPayLoad = parseJwt(token);
+    if (jwtPayLoad.exp < Date.now() / 1000) {
+      localStorage.removeItem("token");
+      next({ name: "home" });
+    }
+  }
+  if (to.name === "signin" && token) {
+    next({ name: "dashboard" });
+  } else if (to.name === "dashboard" && !token) {
+    next({ name: "home" });
+  } else {
+    next();
+  }
+});
+
+export default router;

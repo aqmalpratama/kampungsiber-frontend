@@ -15,24 +15,37 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <!-- <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
-          </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="#">FAQ</a>
+            <a class="nav-link active" aria-current="page" href="/dashboard"
+              >Beranda</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" :href="'/profile/update/' + user_id">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">FAQ</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="">Contact Us</a>
           </li>
-          <li class="nav-item">
-            <a href="/signin" class="btn btn-green">Sign In</a>
+          <li class="nav-item" v-if="user">
+            <a
+              href="javascript:void(0)"
+              @click="handleSignOut"
+              class="btn btn-warning"
+              >Sign Out</a
+            >
+          </li>
+          <li class="nav-item" v-if="!user">
+            <a href="/tes" class="btn btn-green">Sign In</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- 
-  <section style="height: 1000px">adasdasdsa</section> -->
+    <section style="height: 1000px">adasdasdsa</section> -->
 </template>
 
 <style scoped>
@@ -77,6 +90,13 @@ nav {
 <script lang="ts">
 import { defineComponent } from "vue";
 export default defineComponent({
-  name: "NavbarVue",
+  name: "NavbarLogged",
+  props: ["user", "user_id"],
+  methods: {
+    handleSignOut() {
+      localStorage.removeItem("token");
+      this.$router.push("/");
+    },
+  },
 });
 </script>
