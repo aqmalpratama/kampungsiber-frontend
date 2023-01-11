@@ -153,6 +153,7 @@ export default defineComponent({
     logout() {
       localStorage.clear();
       this.$router.push({ name: "LandingPage" })
+      alert('Logged Out')
     }
   },
   mounted() {

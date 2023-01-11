@@ -1,46 +1,37 @@
 <template>
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <ion-page>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <ion-content :fullscreen="true">
       <ion-row>
-        <ion-toolbar style="color: #343a40">
-          <ion-title style="color: white; margin-left: 100px; font-size: 25px"
-            >Kampung<span style="color: #00dc72; font-size: 25px"
-              >Siber</span
-            ></ion-title
-          >
-          <ion-buttons class="button-nav" slot="primary" style="margin-bottom: 25px; color: white;">
-            <ion-button
-              class="ion-text-capitalize"
-              style="font-size: 25px; margin-left: 30px"
-              href="/homepage"
-            >
+        <ion-toolbar style="color:#343A40">
+          <ion-title
+            style="color:white; margin-left :3vh;margin-top: 10px; margin-bottom: 10px; font-size: 2.4vh;">Kampung<span
+              style="color:#00DC72; font-size: 2.4vh;">Siber</span></ion-title>
+          <ion-buttons class="button-nav" slot="primary" style="margin-bottom: 3vh;">
+            <ion-button class="ion-text-capitalize" style="font-size: 2.4vh; margin: 2.2vh; margin-left: 30px;"
+              href="/LandingPage">
               Beranda
             </ion-button>
-            <ion-button
-              class="ion-text-capitalize"
-              style="font-size: 25px; margin-left: 30px"
-              href="/Dashboard"
-            >
+            <ion-button class="ion-text-capitalize" style="font-size: 2.4vh; margin: 2.2vh; margin-left: 30px;"
+              href="/Dashboard">
               Dashboard
             </ion-button>
-            <ion-button
-              class="ion-text-capitalize"
-              style="font-size: 25px; margin-left: 30px"
-              href="/Riwayat"
-            >
+            <ion-button class="ion-text-capitalize" style="font-size: 2.4vh; margin: 2.2vh; margin-left: 30px;"
+              href="/Riwayat">
               Riwayat
             </ion-button>
-            <ion-button
-              class="ion-text-capitalize"
-              style="font-size: 25px; margin-left: 30px"
-              href="/ProfilePage"
-            >
+            <ion-button class="ion-text-capitalize" style="font-size: 2.4vh; margin: 2.2vh; margin-left: 30px;"
+              href="/Profile">
               Profile
+            </ion-button>
+            <ion-button class="ion-text-capitalize" style="font-size: 2.4vh; margin: 2.2vh; margin-left: 30px;"
+            v-on:click="logout()">
+              Sign Out
             </ion-button>
           </ion-buttons>
         </ion-toolbar>
       </ion-row>
+
       <ion-grid>
         <ion-row class="back1">
           <ion-col style="margin-left: 100px;">
@@ -66,13 +57,13 @@
               <br>memilih kami kan?
               <br>nah ini dia alasannya!</span>
           </ion-col>
-          <ion-col size-xl="2.2" style="margin-right: 10px; margin-left: 25px;">
+          <ion-col size-xl="2.2" style="margin-right: 1vh; margin-left: 2vh; width: 5vh;">
             <ion-img src="https://i.postimg.cc/MTNbyJpY/Card1.png"></ion-img>
           </ion-col>
-          <ion-col size-xl="2.2" style="margin-right: 10px; margin-left: 25px; margin-top: 60px;">
+          <ion-col size-xl="2.2" style="margin-right: 1vh; top: 5vh; margin-left: 2vh; width: 5vh;">
             <ion-img src="https://i.postimg.cc/xTKyb7DK/Group-21.png"></ion-img>
           </ion-col>
-          <ion-col size-xl="2.2" style="margin-left: 25px;">
+          <ion-col size-xl="2.2" style="margin-left: 2vh; width: 5vh;">
             <ion-img src="https://i.postimg.cc/KvXDjbVG/Group-22.png"></ion-img>
           </ion-col>
         </ion-row>
@@ -161,8 +152,8 @@
         <ion-row class="ion-align-items-center" style="background-color: #F6F9FC;">
           <ion-col></ion-col>
           <ion-col>
-            <ion-button expand="block" shape="round" color="light" fill="outline" class="testimoni-button"><span
-                class="testimoni-text" href="/TestimoniPage">Lihat Testimoni lainnya~~</span></ion-button>
+            <ion-button expand="block" shape="round" color="light" fill="outline" class="testimoni-button" style="width: fit-content; height: 10vh;"><span
+                class="testimoni-text" href="/Testimoni">Lihat Testimoni lainnya~~</span></ion-button>
           </ion-col>
           <ion-col></ion-col>
         </ion-row>
@@ -174,274 +165,274 @@
     color: #000000;
     overflow: visible;
     text-align: center;
-    margin:0px 200px;
-    z-index: +100;">
+    margin:0px 20vh;
+    z-index: +80;">
         </div>
 
-        <ion-row style="background-color: #F6F9FC; padding: 76px 169px">
+        <ion-row style="background-color: #F6F9FC; padding: 6vh;">
           <ion-col style="z-index: +100">
-            <ion-card style="z-index: -1; position:relative;">
+            <ion-card style="z-index: -1;top: 8vh; ">
               <ion-card-header>
-                <ion-card-title style="font-size:40px; text-align: center; padding-top: 15px;">John Doe</ion-card-title>
-                <hr style="border: 100px;
-    border-top: 3px double #333;
-    color: #000000;
-    font-weight: 100px;
-    overflow: visible;
-    text-align: center;
-    margin:0px 35px;
-    height: 5px;">
-                <ion-img src="https://i.postimg.cc/0QWqNkcB/Rectangle-178.png" style="height: 50px;"></ion-img>
-                <ion-card-subtitle style="font-size:35px; text-align: center;">Rp. xxx.xxx / Jam</ion-card-subtitle>
+                <ion-card-title style="font-size:4.5vh; text-align: center; padding-top: 2vh;">John Doe</ion-card-title>
+                <hr style="border: 10vh;
+                  border-top: 3px double #333;
+                  color: #000000;
+                  font-weight: 100px;
+                  overflow: visible;
+                  text-align: center;
+                  margin:0px 35px;
+                  height: 5px;">
+                <ion-img src="https://i.postimg.cc/0QWqNkcB/Rectangle-178.png" style="height: 6vh;"></ion-img>
+                <ion-card-subtitle style="font-size:4.4vh; text-align: center;">Rp. xxx.xxx / Jam</ion-card-subtitle>
               </ion-card-header>
-              <ion-card-content style="font-size:25px; justify-content: center; padding:34px 50px">
+              <ion-card-content style="font-size:3vh; justify-content: center; padding:3vh 6vh">
                 Spesialis Laravel <img src="https://i.postimg.cc/cH4SZgM3/Vector.png"
-                  style="height: 30px; float:right"><br>
+                  style="margin-top: 1vh; height: 3vh; float:right"><br>
                 Spealis Android <img src="https://i.postimg.cc/cH4SZgM3/Vector.png"
-                  style="height: 30px; float:right"><br>
-                Spesialis IOS<img src="https://i.postimg.cc/cH4SZgM3/Vector.png" style="height: 30px; float:right"><br>
+                  style="margin-top: 1vh; height: 3vh; float:right"><br>
+                Spesialis IOS<img src="https://i.postimg.cc/cH4SZgM3/Vector.png" style="margin-top: 1vh; height: 3vh; float:right"><br>
                 <img src="https://i.postimg.cc/0NCsLdmx/material-symbols-calendar-month-outline.png"
-                  style="height: 30px; float:left; margin-top: 30px;  margin-left: 22px;">
-                <h3 style="font-size:20px; padding:34px 50px">Senin-Jumat<br>
+                  style="height: 3.7vh; float:left; margin-top: 2.2vh;  margin-left: 0.4vh;">
+                <h3 style="font-size:20px; padding:2vh 4vh">Senin-Jumat<br>
                   11:00-13:00<br>
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
+                <ion-button expand="full" color="success" size="large" href="/booking-consultation"><span class="btn2text">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
           </ion-col>
           <ion-col style="z-index: +100;margin-left:62px">
-            <ion-card style="z-index: -1; position:relative;">
+            <ion-card style="z-index: -1;top: 8vh;">
               <ion-card-header>
-                <ion-card-title style="font-size:40px; text-align: center; padding-top: 15px">John Doe</ion-card-title>
-                <hr style="border: 100px;
-    border-top: 3px double #333;
-    color: #000000;
-    font-weight: 100px;
-    overflow: visible;
-    text-align: center;
-    margin:0px 35px;
-    height: 5px;">
-                <ion-img src="https://i.postimg.cc/0QWqNkcB/Rectangle-178.png" style="height: 50px;"></ion-img>
-                <ion-card-subtitle style="font-size:35px; text-align: center;">Rp. xxx.xxx / Jam</ion-card-subtitle>
+                <ion-card-title style="font-size:4.5vh; text-align: center; padding-top: 2vh;">John Doe</ion-card-title>
+                <hr style="border: 10vh;
+                  border-top: 3px double #333;
+                  color: #000000;
+                  font-weight: 100px;
+                  overflow: visible;
+                  text-align: center;
+                  margin:0px 35px;
+                  height: 5px;">
+                <ion-img src="https://i.postimg.cc/0QWqNkcB/Rectangle-178.png" style="height: 6vh;"></ion-img>
+                <ion-card-subtitle style="font-size:4.4vh; text-align: center;">Rp. xxx.xxx / Jam</ion-card-subtitle>
               </ion-card-header>
-              <ion-card-content style="font-size:25px; justify-content: center; padding:34px 50px">
+              <ion-card-content style="font-size:3vh; justify-content: center; padding:3vh 6vh">
                 Spesialis Laravel <img src="https://i.postimg.cc/cH4SZgM3/Vector.png"
-                  style="height: 30px; float:right"><br>
+                  style="margin-top: 1vh; height: 3vh; float:right"><br>
                 Spealis Android <img src="https://i.postimg.cc/cH4SZgM3/Vector.png"
-                  style="height: 30px; float:right"><br>
-                Spesialis IOS<img src="https://i.postimg.cc/cH4SZgM3/Vector.png" style="height: 30px; float:right"><br>
+                  style="margin-top: 1vh; height: 3vh; float:right"><br>
+                Spesialis IOS<img src="https://i.postimg.cc/cH4SZgM3/Vector.png" style="margin-top: 1vh; height: 3vh; float:right"><br>
                 <img src="https://i.postimg.cc/0NCsLdmx/material-symbols-calendar-month-outline.png"
-                  style="height: 30px; float:left; margin-top: 30px;  margin-left: 22px;">
-                <h3 style="font-size:20px; padding:34px 50px">Senin-Jumat<br>
+                  style="height: 3.7vh; float:left; margin-top: 2.2vh;  margin-left: 0.4vh;">
+                <h3 style="font-size:20px; padding:2vh 4vh">Senin-Jumat<br>
                   11:00-13:00<br>
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
+                <ion-button expand="full" color="success" size="large" href="/booking-consultation"><span class="btn2text">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
           </ion-col>
           <ion-col style="z-index: +100;margin-left:62px">
-            <ion-card style="z-index: -1; position:relative;">
+            <ion-card style="z-index: -1;top: 8vh;">
               <ion-card-header>
-                <ion-card-title style="font-size:40px; text-align: center; padding-top: 15px">John Doe</ion-card-title>
-                <hr style="border: 100px;
-    border-top: 3px double #333;
-    color: #000000;
-    font-weight: 100px;
-    overflow: visible;
-    text-align: center;
-    margin:0px 35px;
-    height: 5px;">
-                <ion-img src="https://i.postimg.cc/0QWqNkcB/Rectangle-178.png" style="height: 50px;"></ion-img>
-                <ion-card-subtitle style="font-size:35px; text-align: center;">Rp. xxx.xxx / Jam</ion-card-subtitle>
+                <ion-card-title style="font-size:4.5vh; text-align: center; padding-top: 2vh;">John Doe</ion-card-title>
+                <hr style="border: 10vh;
+                  border-top: 3px double #333;
+                  color: #000000;
+                  font-weight: 100px;
+                  overflow: visible;
+                  text-align: center;
+                  margin:0px 35px;
+                  height: 5px;">
+                <ion-img src="https://i.postimg.cc/0QWqNkcB/Rectangle-178.png" style="height: 6vh;"></ion-img>
+                <ion-card-subtitle style="font-size:4.4vh; text-align: center;">Rp. xxx.xxx / Jam</ion-card-subtitle>
               </ion-card-header>
-              <ion-card-content style="font-size:25px; justify-content: center; padding:34px 50px">
+              <ion-card-content style="font-size:3vh; justify-content: center; padding:3vh 6vh">
                 Spesialis Laravel <img src="https://i.postimg.cc/cH4SZgM3/Vector.png"
-                  style="height: 30px; float:right"><br>
+                  style="margin-top: 1vh; height: 3vh; float:right"><br>
                 Spealis Android <img src="https://i.postimg.cc/cH4SZgM3/Vector.png"
-                  style="height: 30px; float:right"><br>
-                Spesialis IOS<img src="https://i.postimg.cc/cH4SZgM3/Vector.png" style="height: 30px; float:right"><br>
+                  style="margin-top: 1vh; height: 3vh; float:right"><br>
+                Spesialis IOS<img src="https://i.postimg.cc/cH4SZgM3/Vector.png" style="margin-top: 1vh; height: 3vh; float:right"><br>
                 <img src="https://i.postimg.cc/0NCsLdmx/material-symbols-calendar-month-outline.png"
-                  style="height: 30px; float:left; margin-top: 30px;  margin-left: 22px;">
-                <h3 style="font-size:20px; padding:34px 50px">Senin-Jumat<br>
+                  style="height: 3.7vh; float:left; margin-top: 2.2vh;  margin-left: 0.4vh;">
+                <h3 style="font-size:20px; padding:2vh 4vh">Senin-Jumat<br>
                   11:00-13:00<br>
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
+                <ion-button expand="full" color="success" size="large" href="/booking-consultation"><span class="btn2text">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
           </ion-col>
           <ion-col style="z-index: +100; margin-left:62px">
-            <ion-card style="z-index: -1; position:relative;">
+            <ion-card style="z-index: -1;top: 8vh;">
               <ion-card-header>
-                <ion-card-title style="font-size:40px; text-align: center; padding-top: 15px">John Doe</ion-card-title>
-                <hr style="border: 100px;
-    border-top: 3px double #333;
-    color: #000000;
-    font-weight: 100px;
-    overflow: visible;
-    text-align: center;
-    margin:0px 35px;
-    height: 5px;">
-                <ion-img src="https://i.postimg.cc/0QWqNkcB/Rectangle-178.png" style="height: 50px;"></ion-img>
-                <ion-card-subtitle style="font-size:35px; text-align: center;">Rp. xxx.xxx / Jam</ion-card-subtitle>
+                <ion-card-title style="font-size:4.5vh; text-align: center; padding-top: 2vh;">John Doe</ion-card-title>
+                <hr style="border: 10vh;
+                  border-top: 3px double #333;
+                  color: #000000;
+                  font-weight: 100px;
+                  overflow: visible;
+                  text-align: center;
+                  margin:0px 35px;
+                  height: 5px;">
+                <ion-img src="https://i.postimg.cc/0QWqNkcB/Rectangle-178.png" style="height: 6vh;"></ion-img>
+                <ion-card-subtitle style="font-size:4.4vh; text-align: center;">Rp. xxx.xxx / Jam</ion-card-subtitle>
               </ion-card-header>
-              <ion-card-content style="font-size:25px; justify-content: center; padding:34px 50px">
+              <ion-card-content style="font-size:3vh; justify-content: center; padding:3vh 6vh">
                 Spesialis Laravel <img src="https://i.postimg.cc/cH4SZgM3/Vector.png"
-                  style="height: 30px; float:right"><br>
+                  style="margin-top: 1vh; height: 3vh; float:right"><br>
                 Spealis Android <img src="https://i.postimg.cc/cH4SZgM3/Vector.png"
-                  style="height: 30px; float:right"><br>
-                Spesialis IOS<img src="https://i.postimg.cc/cH4SZgM3/Vector.png" style="height: 30px; float:right"><br>
+                  style="margin-top: 1vh; height: 3vh; float:right"><br>
+                Spesialis IOS<img src="https://i.postimg.cc/cH4SZgM3/Vector.png" style="margin-top: 1vh; height: 3vh; float:right"><br>
                 <img src="https://i.postimg.cc/0NCsLdmx/material-symbols-calendar-month-outline.png"
-                  style="height: 30px; float:left; margin-top: 30px;  margin-left: 22px;">
-                <h3 style="font-size:20px; padding:34px 50px">Senin-Jumat<br>
+                  style="height: 3.7vh; float:left; margin-top: 2.2vh;  margin-left: 0.4vh;">
+                <h3 style="font-size:20px; padding:2vh 4vh">Senin-Jumat<br>
                   11:00-13:00<br>
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
+                <ion-button expand="full" color="success" size="large" href="/booking-consultation"><span class="btn2text">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
           </ion-col>
         </ion-row>
 
-        <ion-row style="background-color: #F6F9FC; padding: 0px 169px;">
+        <ion-row style="background-color: #F6F9FC; padding: 4vh;">
           <ion-col style="z-index: +100">
-            <ion-card style="z-index: -1; position:relative;">
+            <ion-card style="z-index: -1;top: 8vh;">
               <ion-card-header>
-                <ion-card-title style="font-size:40px; text-align: center; padding-top: 15px">John Doe</ion-card-title>
-                <hr style="border: 100px;
-    border-top: 3px double #333;
-    color: #000000;
-    font-weight: 100px;
-    overflow: visible;
-    text-align: center;
-    margin:0px 35px;
-    height: 5px;">
-                <ion-img src="https://i.postimg.cc/0QWqNkcB/Rectangle-178.png" style="height: 50px;"></ion-img>
-                <ion-card-subtitle style="font-size:35px; text-align: center;">Rp. xxx.xxx / Jam</ion-card-subtitle>
+                <ion-card-title style="font-size:4.5vh; text-align: center; padding-top: 2vh;">John Doe</ion-card-title>
+                <hr style="border: 10vh;
+                  border-top: 3px double #333;
+                  color: #000000;
+                  font-weight: 100px;
+                  overflow: visible;
+                  text-align: center;
+                  margin:0px 35px;
+                  height: 5px;">
+                <ion-img src="https://i.postimg.cc/0QWqNkcB/Rectangle-178.png" style="height: 6vh;"></ion-img>
+                <ion-card-subtitle style="font-size:4.4vh; text-align: center;">Rp. xxx.xxx / Jam</ion-card-subtitle>
               </ion-card-header>
-              <ion-card-content style="font-size:25px; justify-content: center; padding:34px 50px">
+              <ion-card-content style="font-size:3vh; justify-content: center; padding:3vh 6vh">
                 Spesialis Laravel <img src="https://i.postimg.cc/cH4SZgM3/Vector.png"
-                  style="height: 30px; float:right"><br>
+                  style="margin-top: 1vh; height: 3vh; float:right"><br>
                 Spealis Android <img src="https://i.postimg.cc/cH4SZgM3/Vector.png"
-                  style="height: 30px; float:right"><br>
-                Spesialis IOS<img src="https://i.postimg.cc/cH4SZgM3/Vector.png" style="height: 30px; float:right"><br>
+                  style="margin-top: 1vh; height: 3vh; float:right"><br>
+                Spesialis IOS<img src="https://i.postimg.cc/cH4SZgM3/Vector.png" style="margin-top: 1vh; height: 3vh; float:right"><br>
                 <img src="https://i.postimg.cc/0NCsLdmx/material-symbols-calendar-month-outline.png"
-                  style="height: 30px; float:left; margin-top: 30px;  margin-left: 22px;">
-                <h3 style="font-size:20px; padding:34px 50px">Senin-Jumat<br>
+                  style="height: 3.7vh; float:left; margin-top: 2.2vh;  margin-left: 0.4vh;">
+                <h3 style="font-size:20px; padding:2vh 4vh">Senin-Jumat<br>
                   11:00-13:00<br>
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
+                <ion-button expand="full" color="success" size="large" href="/booking-consultation"><span class="btn2text">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
           </ion-col>
           <ion-col style="z-index: +100;margin-left:62px">
-            <ion-card style="z-index: -1; position:relative;">
+            <ion-card style="z-index: -1;top: 8vh;">
               <ion-card-header>
-                <ion-card-title style="font-size:40px; text-align: center; padding-top: 15px">John Doe</ion-card-title>
-                <hr style="border: 100px;
-    border-top: 3px double #333;
-    color: #000000;
-    font-weight: 100px;
-    overflow: visible;
-    text-align: center;
-    margin:0px 35px;
-    height: 5px;">
-                <ion-img src="https://i.postimg.cc/0QWqNkcB/Rectangle-178.png" style="height: 50px;"></ion-img>
-                <ion-card-subtitle style="font-size:35px; text-align: center;">Rp. xxx.xxx / Jam</ion-card-subtitle>
+                <ion-card-title style="font-size:4.5vh; text-align: center; padding-top: 2vh;">John Doe</ion-card-title>
+                <hr style="border: 10vh;
+                  border-top: 3px double #333;
+                  color: #000000;
+                  font-weight: 100px;
+                  overflow: visible;
+                  text-align: center;
+                  margin:0px 35px;
+                  height: 5px;">
+                <ion-img src="https://i.postimg.cc/0QWqNkcB/Rectangle-178.png" style="height: 6vh;"></ion-img>
+                <ion-card-subtitle style="font-size:4.4vh; text-align: center;">Rp. xxx.xxx / Jam</ion-card-subtitle>
               </ion-card-header>
-              <ion-card-content style="font-size:25px; justify-content: center; padding:34px 50px">
+              <ion-card-content style="font-size:3vh; justify-content: center; padding:3vh 6vh">
                 Spesialis Laravel <img src="https://i.postimg.cc/cH4SZgM3/Vector.png"
-                  style="height: 30px; float:right"><br>
+                  style="margin-top: 1vh; height: 3vh; float:right"><br>
                 Spealis Android <img src="https://i.postimg.cc/cH4SZgM3/Vector.png"
-                  style="height: 30px; float:right"><br>
-                Spesialis IOS<img src="https://i.postimg.cc/cH4SZgM3/Vector.png" style="height: 30px; float:right"><br>
+                  style="margin-top: 1vh; height: 3vh; float:right"><br>
+                Spesialis IOS<img src="https://i.postimg.cc/cH4SZgM3/Vector.png" style="margin-top: 1vh; height: 3vh; float:right"><br>
                 <img src="https://i.postimg.cc/0NCsLdmx/material-symbols-calendar-month-outline.png"
-                  style="height: 30px; float:left; margin-top: 30px;  margin-left: 22px;">
-                <h3 style="font-size:20px; padding:34px 50px">Senin-Jumat<br>
+                  style="height: 3.7vh; float:left; margin-top: 2.2vh;  margin-left: 0.4vh;">
+                <h3 style="font-size:20px; padding:2vh 4vh">Senin-Jumat<br>
                   11:00-13:00<br>
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
+                <ion-button expand="full" color="success" size="large" href="/booking-consultation"><span class="btn2text">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
           </ion-col>
           <ion-col style="z-index: +100;margin-left:62px">
-            <ion-card style="z-index: -1; position:relative;">
+            <ion-card style="z-index: -1;top: 8vh;">
               <ion-card-header>
-                <ion-card-title style="font-size:40px; text-align: center; padding-top: 15px">John Doe</ion-card-title>
-                <hr style="border: 100px;
-    border-top: 3px double #333;
-    color: #000000;
-    font-weight: 100px;
-    overflow: visible;
-    text-align: center;
-    margin:0px 35px;
-    height: 5px;">
-                <ion-img src="https://i.postimg.cc/0QWqNkcB/Rectangle-178.png" style="height: 50px;"></ion-img>
-                <ion-card-subtitle style="font-size:35px; text-align: center;">Rp. xxx.xxx / Jam</ion-card-subtitle>
+                <ion-card-title style="font-size:4.5vh; text-align: center; padding-top: 2vh;">John Doe</ion-card-title>
+                <hr style="border: 10vh;
+                  border-top: 3px double #333;
+                  color: #000000;
+                  font-weight: 100px;
+                  overflow: visible;
+                  text-align: center;
+                  margin:0px 35px;
+                  height: 5px;">
+                <ion-img src="https://i.postimg.cc/0QWqNkcB/Rectangle-178.png" style="height: 6vh;"></ion-img>
+                <ion-card-subtitle style="font-size:4.4vh; text-align: center;">Rp. xxx.xxx / Jam</ion-card-subtitle>
               </ion-card-header>
-              <ion-card-content style="font-size:25px; justify-content: center; padding:34px 50px">
+              <ion-card-content style="font-size:3vh; justify-content: center; padding:3vh 6vh">
                 Spesialis Laravel <img src="https://i.postimg.cc/cH4SZgM3/Vector.png"
-                  style="height: 30px; float:right"><br>
+                  style="margin-top: 1vh; height: 3vh; float:right"><br>
                 Spealis Android <img src="https://i.postimg.cc/cH4SZgM3/Vector.png"
-                  style="height: 30px; float:right"><br>
-                Spesialis IOS<img src="https://i.postimg.cc/cH4SZgM3/Vector.png" style="height: 30px; float:right"><br>
+                  style="margin-top: 1vh; height: 3vh; float:right"><br>
+                Spesialis IOS<img src="https://i.postimg.cc/cH4SZgM3/Vector.png" style="margin-top: 1vh; height: 3vh; float:right"><br>
                 <img src="https://i.postimg.cc/0NCsLdmx/material-symbols-calendar-month-outline.png"
-                  style="height: 30px; float:left; margin-top: 30px;  margin-left: 22px;">
-                <h3 style="font-size:20px; padding:34px 50px">Senin-Jumat<br>
+                  style="height: 3.7vh; float:left; margin-top: 2.2vh;  margin-left: 0.4vh;">
+                <h3 style="font-size:20px; padding:2vh 4vh">Senin-Jumat<br>
                   11:00-13:00<br>
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" href="/Dashboard">Lihat
+                <ion-button expand="full" color="success" size="large" href="/booking-consultation"><span class="btn2text">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
           </ion-col>
           <ion-col style="z-index: +100; margin-left:62px">
-            <ion-card style="z-index: -1; position:relative;">
+            <ion-card style="z-index: -1;top: 8vh;">
               <ion-card-header>
-                <ion-card-title style="font-size:40px; text-align: center; padding-top: 15px">John Doe</ion-card-title>
-                <hr style="border: 100px;
-    border-top: 3px double #333;
-    color: #000000;
-    font-weight: 100px;
-    overflow: visible;
-    text-align: center;
-    margin:0px 35px;
-    height: 5px;">
-                <ion-img src="https://i.postimg.cc/0QWqNkcB/Rectangle-178.png" style="height: 50px;"></ion-img>
-                <ion-card-subtitle style="font-size:35px; text-align: center;">Rp. xxx.xxx / Jam</ion-card-subtitle>
+                <ion-card-title style="font-size:4.5vh; text-align: center; padding-top: 2vh;">John Doe</ion-card-title>
+                <hr style="border: 10vh;
+                  border-top: 3px double #333;
+                  color: #000000;
+                  font-weight: 100px;
+                  overflow: visible;
+                  text-align: center;
+                  margin:0px 35px;
+                  height: 5px;">
+                <ion-img src="https://i.postimg.cc/0QWqNkcB/Rectangle-178.png" style="height: 6vh;"></ion-img>
+                <ion-card-subtitle style="font-size:4.4vh; text-align: center;">Rp. xxx.xxx / Jam</ion-card-subtitle>
               </ion-card-header>
-              <ion-card-content style="font-size:25px; justify-content: center; padding:34px 50px">
+              <ion-card-content style="font-size:3vh; justify-content: center; padding:3vh 6vh">
                 Spesialis Laravel <img src="https://i.postimg.cc/cH4SZgM3/Vector.png"
-                  style="height: 30px; float:right"><br>
+                  style="margin-top: 1vh; height: 3vh; float:right"><br>
                 Spealis Android <img src="https://i.postimg.cc/cH4SZgM3/Vector.png"
-                  style="height: 30px; float:right"><br>
-                Spesialis IOS<img src="https://i.postimg.cc/cH4SZgM3/Vector.png" style="height: 30px; float:right"><br>
+                  style="margin-top: 1vh; height: 3vh; float:right"><br>
+                Spesialis IOS<img src="https://i.postimg.cc/cH4SZgM3/Vector.png" style="margin-top: 1vh; height: 3vh; float:right"><br>
                 <img src="https://i.postimg.cc/0NCsLdmx/material-symbols-calendar-month-outline.png"
-                  style="height: 30px; float:left; margin-top: 30px;  margin-left: 22px;">
-                <h3 style="font-size:20px; padding:34px 50px">Senin-Jumat<br>
+                  style="height: 3.7vh; float:left; margin-top: 2.2vh;  margin-left: 0.4vh;">
+                <h3 style="font-size:20px; padding:2vh 4vh">Senin-Jumat<br>
                   11:00-13:00<br>
                   15:00-16:00<br>
                   19:00-12:00
                 </h3>
-                <ion-button expand="full" color="success" size="large" href="/Dashboard"><span class="btn2text" >Lihat
+                <ion-button expand="full" color="success" size="large" href="/booking-consultation"><span class="btn2text">Lihat
                     Detail</span></ion-button>
               </ion-card-content>
             </ion-card>
@@ -451,15 +442,15 @@
         <ion-row class="ion-align-items-center" style="background-color: #F6F9FC;">
           <ion-col></ion-col>
           <ion-col>
-            <ion-button expand="block" shape="round" color="light" fill="outline" class="testimoni-button"><span
+            <ion-button expand="block" shape="round" color="light" fill="outline" class="testimoni-button" href="/Dashboard"><span
                 class="testimoni-text">...Lihat Selengkapnya</span></ion-button>
           </ion-col>
           <ion-col></ion-col>
         </ion-row>
 
-        <ion-row justify-content-center style="background-color: #F6F9FC; height: 100%; padding-top: 100px;">
+        <ion-row justify-content-center style="background-color: #F6F9FC; height: 100%; padding: 14vh;">
           <div style="width: 100%; display: flex; align-items: center; justify-content: center;">
-            <ion-card class="card-center">
+            <ion-card class="card-center" style="width: fit-content; height: fit-content;">
               <ion-card-header>
                 <ion-card-title
                   style="font-size:55px; text-align: center; padding: 23px 147px; font-weight:bolder;">Konsultan kami
@@ -474,15 +465,15 @@
                   <img
                     src="https://www.freepnglogos.com/uploads/logo-tokopedia-png/tokopedia-oralgen-nupearl-advanced-teeth-whitening-system-with-11.png"
                     class="company-img">
-                  <img src="https://logodownload.org/wp-content/uploads/2021/03/shopee-logo.png" class="company-img">
                 </div>
-                <div style="display:flex; padding-top:90px; justify-content:center">
+                <div style="display:flex; padding-top:auto; justify-content:center">
+                  <img src="https://logodownload.org/wp-content/uploads/2021/03/shopee-logo.png" class="company-img">
                   <img src="https://logos-download.com/wp-content/uploads/2018/03/Grab_logo_green.png"
-                    class="company-img">
+                    class="company-img" style="margin-top: 20px;">
                   <img
                     src="https://1.bp.blogspot.com/-x0AXKXB9uqU/XnKxGP2VVfI/AAAAAAAASbY/r1872kTuFVQWfHJg0DqI8mzoTuo-_IttgCLcBGAsYHQ/s1600/ruang%2Bguru.png"
-                    class="company-img" style="height:130px;padding-top:-30px;">
-                  <img src="https://spectrathailand.com/wp-content/uploads/2019/11/Lazada-logo.png" class="company-img">
+                    class="company-img" style="height:130px;">
+                  <img src="https://spectrathailand.com/wp-content/uploads/2019/11/Lazada-logo.png" class="company-img" style="margin-top: 20px;">
                 </div>
               </ion-card-content>
             </ion-card>
@@ -497,7 +488,7 @@
     color: #000000;
     overflow: visible;
     text-align: center;
-    margin:0px 200px;
+    margin:0px 20vh;
     z-index: +100;">
         </div>
         <ion-row style="background-color: #F6F9FC; padding-bottom: 100px;">
@@ -509,7 +500,7 @@
 
             </ion-col>
             <ion-col size="auto">
-              <ion-button href="/ContactUs" expand="block" shape="round" color="light" fill="outline" class="chat-button">
+              <ion-button href="ContactUs" expand="block" shape="round" color="light" fill="outline" class="chat-button">
                 <ion-img slot="start" src="https://i.postimg.cc/65Y5M1GH/Vector-1.png" size="auto"
                   style="padding-right: 15px; padding-left: 45px;"></ion-img>
                 <span style="padding-right: 100px">Chat Kami</span></ion-button>
@@ -527,21 +518,21 @@
     z-index: +100;">
         </div>
 
-        <ion-row class="ion-justify-content-between" style="background-color: #F6F9FC; height: auto;">
-          <ion-col size="3">
+        <ion-row class="ion-justify-content-between" style="background-color: #F6F9FC;">
+          <ion-col size="3" style="margin: 4vh;">
             <h3 id="footer1">Kampungsiber@2077</h3>
           </ion-col>
-          <ion-col size="3" style="margin-right: 73px">
-            <div style="display:inline-block;vertical-align:top;">
-              <img src="https://clipground.com/images/e-mail-clipart-2.jpg" style="height: 27px; margin-top: 61px;">
+          <ion-col size="3" style="text-align: end; margin: 2vh;">
+            <div style="display:inline-block;vertical-align:top; text-align: end;">
+              <img src="https://clipground.com/images/e-mail-clipart-2.jpg" style="height: 2vh; margin-top: 8vh; margin-right: 0.4vh;">
             </div>
             <div style="display:inline-block;">
               <p id="footer2">Kampungsiber@mail.com</p>
             </div>
             <div style="display:inline-block;vertical-align:top;">
-              <img src="https://cdn.onlinewebfonts.com/svg/img_424458.png" style="height: 24px; margin-top: 61px;">
-              <img src="http://seldomsounds.com/images/social/twitter.png" style="height: 24px; margin-top: 61px; padding-left: 5px;">
-              <img src="https://pluspng.com/img-png/instagram-logo-eps-png-instagram-logo1-instagram-logo-1915.png" style="height: 24px; margin-top: 61px; padding-left: 5px;">
+              <img src="https://cdn.onlinewebfonts.com/svg/img_424458.png" style="height: 2vh; margin-top: 8vh; margin-right: 0.4vh;">
+              <img src="http://seldomsounds.com/images/social/twitter.png" style="height: 2vh; margin-top: 8vh; margin-right: 0.4vh; padding-left: 5px;">
+              <img src="https://pluspng.com/img-png/instagram-logo-eps-png-instagram-logo1-instagram-logo-1915.png" style="height: 2vh; margin-top: 8vh; margin-right: 0.4vh; padding-left: 5px;">
             </div>
           </ion-col>
         </ion-row>
@@ -578,9 +569,16 @@ export default defineComponent({
   mounted(){
       let user= localStorage.getItem('user');
       if(!user){
-        this.$router.push({name:'LandingPage'})
+        this.$router.push({name:'Landingpage'})
       }
+    },
+    methods: {
+    logout() {
+      localStorage.clear();
+      this.$router.push({ name: "LandingPage" })
+      alert('Logged Out')
     }
+  }
 });
 </script>
 
@@ -652,8 +650,9 @@ ion-card-content {
 }
 .back1 {
   /* position: absolute; */
+  top: -10vh;
   width: 100%;
-  height: 840px;
+  height: 90vh;
   left: 0px;
   background: linear-gradient(180deg, #000D18 0%, #021C35 100%);
 }
@@ -663,39 +662,44 @@ ion-card-content {
 }
 .text1 {
   position: absolute;
-  width: 849px;
-  height: 68px;
-  left: 19px;
-  top: 210px;
+  left: 3vh;
+  top: 20vh;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 45px;
-  line-height: 68px;
+  font-size: 7vh;
+  line-height: 7vh;
   /* identical to box height */
   color: #FFFFFF;
 }
 .text2 {
   position: absolute;
-  width: 1826px;
-  height: 212px;
-  left: 22px;
-  top: 274px;
+  width: 150vh;
+  left: 3vh;
+  top: 26vh;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  font-size: 35px;
-  line-height: 52px;
+  font-size: 3.4vh;
   color: #FFFFFF;
 }
 #img1 {
-  margin-left: 100px;
+  margin-left: 25vh;
   box-sizing: border-box;
   position: absolute;
-  width: auto;
-  height: auto;
+  width: 40vh;
+  height: 50vh;
   /* left: 1138px; */
-  top: 47.67px;
+  top: 6vh;
+}
+#img2 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 40vh;
+  height: 50vh;
+  margin-left: 39vh;
+  /* left: 1353px; */
+  top: 29vh;
 }
 .text2.a {
   left: 42px;
@@ -727,28 +731,19 @@ ion-card-content {
 ion-button {
   text-transform: inherit;
 }
-#img2 {
-  box-sizing: border-box;
-  position: absolute;
-  width: auto;
-  height: auto;
-  margin-left: 300px;
-  /* left: 1353px; */
-  top: 291px;
-}
 #img1,
 #img2 {
   float: right;
 }
 #btn1 {
   position: absolute;
-  width: 397px;
-  height: 70px;
-  left: 57px;
-  top: 490px;
+  width: 40vh;
+  height: 7vh;
+  margin-left: 8vh;
+  top: 45vh;
 }
 .btn1text {
-  font-size: 35px;
+  font-size: 4vh;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
@@ -759,28 +754,25 @@ ion-button {
 }
 .text3 {
   /* position: absolute; */
-  width: 553px;
-  height: 166px;
+  width: 30vh;
+  height: 10vh;
   left: 55px;
-  top: 968px;
+  top: 30vh;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 55px;
+  font-size: 7vh;
   line-height: 82px;
   color: #000000;
 }
 .text4 {
   /* position: absolute; */
-  width: 628px;
-  height: 212px;
-  left: 55px;
-  top: 1157px;
+  width: 40vh;
+  height: 20vh;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  font-size: 35px;
-  line-height: 52px;
+  font-size: 4vh;
   color: #000000;
 }
 .testimoni {
@@ -788,16 +780,16 @@ ion-button {
   color: black;
   font-weight: bold;
   font-family: "Poppins";
-  font-size: 60px;
+  font-size: 7vh;
   text-align: center;
-  padding-top: 190px;
-  padding-bottom: 50px;
+  padding-top: 24vh;
+  padding-bottom: 6vh;
 }
 .konsultan {
   background-color: #F6F9FC;
   color: black;
   font-weight: bolder;
-  font-size: 55px;
+  font-size: 6vh;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 13px;
@@ -845,8 +837,9 @@ ion-card {
 #footer2 {
   font-family: 'Poppins';
   color: #7C7676;
-  font-size: 25px;
-  padding: 56px 21px;
+  font-size: 2vh;
+  margin-top: 7.4vh;
+  margin-right: 0.4vh;
 }
 #footer1 {
   text-align: left;

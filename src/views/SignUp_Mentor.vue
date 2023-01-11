@@ -19,19 +19,7 @@
                             Riwayat Pendidikan (minimum S1)
                         </h2>
                         <div class="textbox">
-                            <ion-item color="dark" style="height: 133px;">
-                                <ion-input class="text-box" placeholder="Sarjana..."></ion-input>
-                                <ion-button id="right-end" class="btn" outline="fill">
-                                    <div class="btn-text">
-                                        <img src="https://icon-library.com/images/dropdown-icon/dropdown-icon-24.jpg">
-                                    </div>
-                                </ion-button>
-                                <ion-popover trigger="click-trigger" triggerAction="click">
-                                    <ng-template>
-                                        <ion-content class="ion-padding">Hello World!</ion-content>
-                                    </ng-template>
-                                </ion-popover>
-                            </ion-item>
+                            <ion-input class="text-box" placeholder="Sarjana..."></ion-input>
 
                         </div>
                         <h2 class="signup">
@@ -44,15 +32,38 @@
                         <h2 class="signup">
                             Upload Ijazah
                         </h2>
-                        <input
-                            style="font-weight: 600; margin-top: 15px; font-size: 35px; margin-right: 41px; line-height: 52px; margin-left: 41px; "
-                            type="file" class="form-control" id="customFile" />
+
+                        <input type="file" id="fileUpload" accept="application/pdf">
+                        <div style="display: flex; align-items: center;">
+                            <ion-button fill="outline" class="btnfile"
+                                onclick="document.getElementById('fileUpload').click()">
+                                <div>
+                                    <img src="http://cdn.onlinewebfonts.com/svg/img_150954.png" style="height: 50px;">
+                                </div>
+                            </ion-button>
+                            <p class="uploadfile">
+                                File harus berupa .PDF
+                            </p>
+                        </div>
 
                         <h2 class="signup">
-                            Riwayat Pengalaman
+                            Total Pengalaman
                         </h2>
-                        <div class="textbox1">
-                            <ion-textarea placeholder="Type something here" rows="6"></ion-textarea>
+
+                        <div style="display: flex; align-items: center;">
+                            <div class="textbox2" style="width: 141px">
+                                <ion-input class="text-box" type="number"></ion-input>
+                            </div>
+                            <p class="tahuntext">
+                                Tahun
+                            </p>
+                        </div>
+
+                        <h2 class="signup">
+                            Linkedin
+                        </h2>
+                        <div class="textbox">
+                            <ion-input class="text-box" placeholder="linkedin.com/in/....."></ion-input>
                         </div>
 
                         <h2 class="signup">
@@ -176,6 +187,17 @@ ion-item {
     padding-left: 41px;
 }
 
+.textbox2 {
+    margin: 0px 30px;
+    width: 141px;
+    height: 133px;
+    padding-right: 20px;
+    background: linear-gradient(0deg, #EFEFEF, #EFEFEF), linear-gradient(0deg, #EFEFEF, #EFEFEF), #EFEFEF;
+    border-radius: 30px;
+    color: black;
+
+}
+
 .textbox {
     margin: 0px 30px;
     width: auto;
@@ -185,18 +207,6 @@ ion-item {
     border-radius: 30px;
     color: black;
 
-}
-
-.textbox1 {
-    background: #FFFFFF;
-    border: 1px solid #000000;
-    border-radius: 30px;
-    width: auto;
-    height: 338px;
-    margin: 0px 30px;
-    color: black;
-    font-size: 35px;
-    padding: 0px 15px;
 }
 
 .text-box {
@@ -267,5 +277,48 @@ ion-item {
     line-height: 38px;
     color: #000000;
     padding: 20px 20px;
+}
+
+.btnfile {
+    margin-left: 45px;
+    margin-top: 20px;
+    width: 100px;
+    height: auto;
+    --color: black;
+    --border-color: black;
+    --padding-start: 20px;
+    --padding-end: 20px;
+    --padding-top: 20px;
+    --padding-bottom: 20px;
+    --border-radius: 20px
+}
+
+.btnfile img {
+    width: auto;
+    height: 30px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.uploadfile {
+    display: inline;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    margin-left: 15px;
+    color: #BFB9B9;
+    text-align: middle;
+}
+
+.tahuntext {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    margin-left: 5px;
+    color: black;
 }
 </style>
